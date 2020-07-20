@@ -23,7 +23,7 @@ Creates a story by replacing placeholder words such as &lt;noun> by looking for 
     * *fruitList* - an ArrayList<String> of fruits.
 * <b>initializeFromSource</b> - populates *map* with the above ArrayList<String>
 * <b>getSubstitute</b> - replaces all the if statements that use category labels with one call to <b>randomFrom</b> that passes the appropriate ArrayList from *map*.
-* <b>processWord</b> - takes in a <word> as a String, then uses <b>getSubstitute</b> to find and return a replacement word. 
+* <b>processWord</b> - takes in a String, then uses <b>getSubstitute</b> to find and return a replacement word. 
 * <b>printOut</b>
 * <b>fromTemplate</b>
 * <b>readIt</b>
