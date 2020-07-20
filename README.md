@@ -2,7 +2,7 @@
 Creates a story by replacing placeholder words such as &lt;noun> by looking for a random word of that type
 
 <b>WordFrequencies</b> - program to determine the word that occurs the most often in a file. Contains the following methods:
-* <b>WordFrequencies/b> - constructor used to initialize the following private variables:
+* <b>WordFrequencies</b> - constructor used to initialize the following private variables:
   * myWords - ArrayList of type String to store unique words from a file
   * myFreqs - ArrayList of type Integer. The kth position in myFreqs represents the number of times the kth word in myWords occurs in the file.
 * <b>findUnique</b> - first clears both myWords and myFreqs, using the .clear() method. Then it selects a file and then iterates over every word in the file, putting the unique words found into myWords. For each word in the kth position of myWords, it puts the count of how many times that word occurs from the selected file into the kth position of myFreqs.
