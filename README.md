@@ -1,7 +1,37 @@
 # random_story_generator
 Creates a story by replacing placeholder words such as &lt;noun> by looking for a random word of that type
 
-## Initials Setup
+## Main Classes
+
+<b>GladLibs</b> Program to tell a random story. Contains the following methods:
+* <b>GladLibs</b> - constructor used to initialize the following private variables:
+  * *map* - a HashMap<String, ArrayList<String>> used to store all of the ArrayLists of words that will be used to randomly generated the story. Cleared upon initailization, then populated when <b>initializeFromSource</b> is called.
+  * *catMap* - a HashMap<String, String> used to track words by category. Cleared upon initialization.
+  * *seenWords* - an ArraList<String> used to track words that have been used already. Populated when <b>initializeFromSource</b> is called.
+  * *myRandom* -a Random() used to generate random Integers.
+  * *dataSourceURL* - a url directory that holds txt files used to populate the various ArrayLists of words.
+  * *dataSourceDirectory* - directory that holds txt files used to populate the various ArrayLists of words.
+  * calls <b>initializeFromSource</b> to populate *map* with the following ArrayList<String>:
+    * *adjectiveList* - an ArrayList<String> of adjectives.
+    * *nounList* - an ArrayList<String> of nouns.
+    * *colorList* - an ArrayList<String> of colors.
+    * *countryList* - an ArrayList<String> of countries.
+    * *nameList* - an ArrayList<String> of names.
+    * *animalList* - an ArrayList<String> of animals.
+    * *timeframeList* - an ArrayList<String> of times.
+    * *verbList* - an ArrayList<String> of verbs.
+    * *fruitList* - an ArrayList<String> of fruits.
+* <b>initializeFromSource</b> - populates *map* with the above ArrayList<String>
+* <b>getSubstitute</b> - replaces all the if statements that use category labels with one call to <b>randomFrom</b> that passes the appropriate ArrayList from *map*.
+* <b>processWord</b> - takes in a <word> as a String, then uses <b>getSubstitute</b> to find and return a replacement word. 
+* <b>printOut</b>
+* <b>fromTemplate</b>
+* <b>readIt</b>
+* <b>totalWordsInMap</b>
+* <b>totalWordsConsidered</b>
+* <b>makeStory</b>
+
+## Conceptual Classes
 
 <b>WordFrequencies</b> - program to determine the word that occurs the most often in a file. Contains the following methods:
 * <b>WordFrequencies</b> - constructor used to initialize the following private variables:
@@ -22,25 +52,3 @@ Creates a story by replacing placeholder words such as &lt;noun> by looking for 
 * <b>testRange</b> - used to find all characters with speaking part frequencies between a minimum and maximum threshold.
 
 Link to exercise: https://www.coursera.org/learn/java-programming-arrays-lists-data/supplement/AbpYj/programming-exercise-telling-a-random-story
-
-## GladLibMap
-
-<b>GladLibs</b> Program to tell a random story. Contains the following methods:
-* <b>GladLibs</b> - constructor used to initialize the following private variables:
-  * *map* - a HashMap<String, ArrayList<String>> used to store all of the ArrayLists of words that will be used to randomly generated the story. Cleared upon initailization, then populated when <b>initializeFromSource</b> is called.
-  * *catMap* - a HashMap<String, String>. Cleared upon initialization.
-  * *seenWords* - an ArraList<String> used to track words that have been used already. Populated when <b>initializeFromSource</b> is called.
-  * *myRandom* -a Random() used to generate random Integers.
-  * *dataSourceURL* - a url directory that holds txt files used to populate the various ArrayLists of words.
-  * *dataSourceDirectory* - directory that holds txt files used to populate the various ArrayLists of words.
-  * calls <b>initializeFromSource</b> to populate *map* with the following ArrayList<String>:
-    * *adjectiveList* - an ArrayList<String> of adjectives.
-    * *nounList* - an ArrayList<String> of nouns.
-    * *colorList* - an ArrayList<String> of colors.
-    * *countryList* - an ArrayList<String> of countries.
-    * *nameList* - an ArrayList<String> of names.
-    * *animalList* - an ArrayList<String> of animals.
-    * *timeframeList* - an ArrayList<String> of times.
-    * *verbList* - an ArrayList<String> of verbs.
-    * *fruitList* - an ArrayList<String> of fruits.
-
