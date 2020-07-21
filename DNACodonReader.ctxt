@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=DNACodonReader()
+comment1.params=
+comment1.target=void\ tester()
+comment2.params=start\ end\ frame\ dna
+comment2.target=void\ testerExtension(int,\ int,\ int,\ java.lang.String)
+comment3.params=start\ dna
+comment3.target=void\ buildCodonMap(int,\ java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ getMostCommonCodon()
+comment5.params=start\ end
+comment5.target=void\ printCodonCounts(int,\ int)
+numComments=6

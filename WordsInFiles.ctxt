@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=WordsInFiles()
+comment1.params=
+comment1.target=void\ tester()
+comment2.params=word
+comment2.target=void\ printFilesIn(java.lang.String)
+comment3.params=number
+comment3.target=java.util.ArrayList\ wordInNumFiles(int)
+comment4.params=
+comment4.target=int\ maxNumber()
+comment5.params=
+comment5.target=void\ buildWordFileMap()
+comment6.params=f
+comment6.target=void\ addWordsFromFile(java.io.File)
+numComments=7
