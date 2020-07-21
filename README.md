@@ -24,12 +24,9 @@ Creates a story by replacing placeholder words such as &lt;noun> by looking for 
 * <b>initializeFromSource</b> - populates *map* with the above ArrayList<String>
 * <b>getSubstitute</b> - replaces all the if statements that use category labels with one call to <b>randomFrom</b> that passes the appropriate ArrayList from *map*.
 * <b>processWord</b> - takes in a String, then uses <b>getSubstitute</b> to find and return a replacement word. 
-* <b>printOut</b>
-* <b>fromTemplate</b>
-* <b>readIt</b>
-* <b>totalWordsInMap</b>
-* <b>totalWordsConsidered</b>
-* <b>makeStory</b>
+* <b>readIt</b> - helper method to take in a txt file and convert it to an ArrayList<String>.
+* <b>totalWordsInMap</b> - returns the total number of words in all the ArrayLists in the HashMap.
+* <b>totalWordsConsidered</b> - returns the total number of words in the ArrayLists of the categories that were used for a particular GladLib. If only noun, color, and adjective were the categories used in a GladLib, then only calculate the sum of all the words in those three ArrayLists.
 
 ## Conceptual Classes
 
